@@ -1,5 +1,7 @@
 import { Card } from "../../ui/Card";
+import { aboutIcons } from "../../../utils";
 
+import { MyValuesCard } from "../../ui/MyValuesCard";
 export const About = () => {
 	return (
 		<section id="about" className="py-20 relative">
@@ -51,7 +53,16 @@ export const About = () => {
 								Moje wartości
 							</h3>
 							<div className="space-y-6">
-								<div className="flex-shrink-0 w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center"></div>
+								{aboutIcons.map((iconObj, index) => (
+									<MyValuesCard
+										key={index}
+										icon={iconObj.icon}
+										title={iconObj.title}
+										text={iconObj.text}
+										textColor={iconObj.color}
+										bgColor={iconObj.bgColor}
+									/>
+								))}
 							</div>
 						</div>
 					</div>

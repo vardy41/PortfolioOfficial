@@ -31,6 +31,11 @@
 	border-color: rgba(139, 92, 246, 0.5);
 }
 
+.skill-pill {
+	background: rgba(51, 65, 85, 0.8);
+	transition: all 0.3s ease;
+}
+
 body {
 	position: relative;
 }
