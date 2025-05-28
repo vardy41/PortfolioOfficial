@@ -7,10 +7,9 @@ export const Layout = ({ children }: LayoutProps) => {
 		<>
 			<Background />
 			<NavBar />
-			<main className="min-h-screen relative">{children}</main>
-			{/* FOOTER */}
+			<main className="min-h-screen relative px-4 sm:px-6 lg:px-8">
+				{children}
+			</main>
 		</>
 	);
 };
-
-export default Layout;

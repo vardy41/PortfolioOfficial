@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { MyValuesCardProps } from "../../../types/types";
+
 export const MyValuesCard = ({
 	icon,
 	title,
@@ -14,10 +15,11 @@ export const MyValuesCard = ({
 				<FontAwesomeIcon className={`${textColor} text-xl`} icon={icon} />
 			</div>
 			<div>
-				<h3 className="text-xl font-medium text-white mb-2">{title}</h3>
-				<p className="text-slate-400">{text}</p>
+				<h3 className="text-lg sm:text-xl font-medium text-white mb-2">
+					{title}
+				</h3>
+				<p className="text-slate-400 text-sm sm:text-base">{text}</p>
 			</div>
 		</div>
 	);
 };
-

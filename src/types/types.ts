@@ -25,3 +25,9 @@ export type SkillsCardProps = {
 	textColor: string;
 	bgColor: string;
 };
+
+export type paragraphProps = {
+	textColor: string;
+	margin?: string;
+	text: string;
+};

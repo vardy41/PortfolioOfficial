@@ -19,7 +19,7 @@ export const SkillsCard = ({
 				{tech.map((techItem, i) => (
 					<span
 						key={i}
-						className="bg-slate-700 text-white px-3 py-1 rounded-full text-sm font-medium">
+						className="bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-sm font-medium">
 						{techItem}
 					</span>
 				))}

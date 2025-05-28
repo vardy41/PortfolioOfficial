@@ -7,6 +7,7 @@ import { faGaugeHigh } from "@fortawesome/free-solid-svg-icons";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faServer } from "@fortawesome/free-solid-svg-icons";
 import { faTools } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 export const socialLinks = [
 	{
@@ -36,7 +37,7 @@ export const aboutIcons = [
 	},
 	{
 		icon: faMobileButton,
-		title: "Responsywnośc",
+		title: "Responsywność",
 		text: "Wszystkie moje projekty działają perfekcyjnie na każdym urządzeniu.",
 		color: "text-purple-400",
 		bgColor: "bg-purple-900/30",
@@ -89,5 +90,28 @@ export const skillsIcons = [
 		techStack: ["Git", "Webpack", "Vite", "Jest", "VS Code"],
 		textColor: "text-indigo-400",
 		bgColor: "bg-indigo-900/30",
+	},
+];
+
+export const specializationList = [
+	{
+		icon: faCheckCircle,
+		text: "Tworzenie responsywnych interfejsów użytkownika",
+	},
+	{
+		icon: faCheckCircle,
+		text: "Optymalizacja wydajności aplikacji webowych",
+	},
+	{
+		icon: faCheckCircle,
+		text: "Implementacja animacji i interaktywnych elementów",
+	},
+	{
+		icon: faCheckCircle,
+		text: "Integracja z API i usługami zewnętrznymi",
+	},
+	{
+		icon: faCheckCircle,
+		text: "Tworzenie aplikacji typu Single Page Application",
 	},
 ];
