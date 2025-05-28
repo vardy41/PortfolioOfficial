@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.gradient-text {
+	background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+	background-clip: text;
+	color: transparent;
+}
+
+.container {
+	width: 100%;
+}
+
+.card {
+	background: rgba(30, 41, 59, 0.8);
+	border: 1px solid rgba(100, 116, 139, 0.2);
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	border-color: rgba(139, 92, 246, 0.5);
+}
+
+body {
+	position: relative;
+}
