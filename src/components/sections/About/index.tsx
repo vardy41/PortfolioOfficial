@@ -1,18 +1,13 @@
 import { Card } from "../../ui/Card";
 import { aboutIcons } from "../../../utils/aboutIconsData";
 import { MyValuesCard } from "../../ui/MyValuesCard";
-import { HeaderLine } from "../../ui/HeaderLine";
+
 import { Section } from "../../ui/Section";
+import { SectionsHeader } from "../../ui/SectionsHeader";
 export const About = () => {
 	return (
 		<Section id="about" className="relative" containerClass="sm:px-6 lg:px-8">
-			<header className="text-center mb-16">
-				<h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-					O <span className="gradient-text">mnie</span>
-				</h2>
-				<HeaderLine />
-			</header>
-
+			<SectionsHeader normalText="O" gradientText="mnie" />
 			<div className="flex flex-col gap-12 items-start">
 				{/* Opis */}
 				<div className="card bg-slate-800 p-6 rounded-xl space-y-4 w-full">

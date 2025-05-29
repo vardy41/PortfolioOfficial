@@ -3,19 +3,13 @@ import { skillsIcons } from "../../../utils/skillIconsData";
 import { specializationList } from "../../../utils/specializationListData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Paragraph } from "../../ui/Paragraph";
-import { HeaderLine } from "../../ui/HeaderLine";
 import { Section } from "../../ui/Section";
+import { SectionsHeader } from "../../ui/SectionsHeader";
 
 export const Skills = () => {
 	return (
 		<Section id="skills" className="bg-slate-900/50">
-			<div className="text-center mb-16">
-				<h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-					Moje
-					<span className="gradient-text"> umiejętności</span>
-				</h2>
-				<HeaderLine />
-			</div>
+			<SectionsHeader normalText="Moje" gradientText="umiejętności" />
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 				{skillsIcons.map((iconObj, index) => (
 					<SkillsCard

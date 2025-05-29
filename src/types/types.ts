@@ -53,3 +53,8 @@ export type SectionProps = {
 	containerClass?: string;
 	id: string;
 };
+
+export type SectionHeaderProps = {
+	normalText: string;
+	gradientText: string;
+};
