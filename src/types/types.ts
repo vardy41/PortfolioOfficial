@@ -46,3 +46,10 @@ export type ProjectCardProps = {
 	iconDemo: IconProp;
 	iconGit: IconProp;
 };
+
+export type SectionProps = {
+	children: ReactNode;
+	className?: string;
+	containerClass?: string;
+	id: string;
+};
