@@ -36,6 +36,11 @@
 	transition: all 0.3s ease;
 }
 
+.skill-pill:hover {
+	background: rgba(139, 92, 246, 0.3);
+	transform: translateY(-2px);
+}
+
 body {
 	position: relative;
 }

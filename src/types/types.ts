@@ -36,4 +36,13 @@ export type CardProps = {
 	title: string;
 	description: string;
 	company: string;
-}
+};
+
+export type ProjectCardProps = {
+	projectBackground: string;
+	title: string;
+	text: string;
+	tech: string[];
+	iconDemo: IconProp;
+	iconGit: IconProp;
+};

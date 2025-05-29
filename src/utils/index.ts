@@ -1,27 +1,18 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faMobileButton } from "@fortawesome/free-solid-svg-icons";
-import { faGaugeHigh } from "@fortawesome/free-solid-svg-icons";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faServer } from "@fortawesome/free-solid-svg-icons";
-import { faTools } from "@fortawesome/free-solid-svg-icons";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-
+import project1Bg from "../assets/svg/backgrounds/projectBg.svg";
+import { iconsObj } from "../assets/svg/icons/icons";
 export const socialLinks = [
 	{
-		icon: faGithub,
+		icon: iconsObj.iconGit,
 		href: "https://github.com/vardy41",
 		label: "GitHub",
 	},
 	{
-		icon: faLinkedin,
+		icon: iconsObj.iconLinkedin,
 		href: "https://www.linkedin.com/in/miko%C5%82ajdoktor/",
 		label: "LinkedIn",
 	},
 	{
-		icon: faEnvelope,
+		icon: iconsObj.iconEnvelope,
 		href: "mailto:d.mikolajj@gmail.com",
 		label: "Email",
 	},
@@ -29,28 +20,28 @@ export const socialLinks = [
 
 export const aboutIcons = [
 	{
-		icon: faCode,
+		icon: iconsObj.iconCode,
 		title: "Czysty kod",
 		text: "Tworzę czytelny, modularny i łatwy w utrzymaniu kod.",
 		color: "text-blue-400",
 		bgColor: "bg-blue-900/30",
 	},
 	{
-		icon: faMobileButton,
+		icon: iconsObj.iconMobile,
 		title: "Responsywność",
 		text: "Wszystkie moje projekty działają perfekcyjnie na każdym urządzeniu.",
 		color: "text-purple-400",
 		bgColor: "bg-purple-900/30",
 	},
 	{
-		icon: faGaugeHigh,
+		icon: iconsObj.iconPerformance,
 		title: "Wydajność",
 		text: "Dbam o optymalizację i szybkość działania aplikacji.",
 		color: "text-indigo-400",
 		bgColor: "bg-indigo-900/30",
 	},
 	{
-		icon: faUsers,
+		icon: iconsObj.iconUsers,
 		title: "User Experience",
 		text: "Tworzę interfejsy z myślą o wygodzie użytkownika.",
 		color: "text-pink-400",
@@ -60,7 +51,7 @@ export const aboutIcons = [
 
 export const skillsIcons = [
 	{
-		icon: faCode,
+		icon: iconsObj.iconCode,
 		title: "Frontend",
 		techStack: [
 			"HTML5",
@@ -77,7 +68,7 @@ export const skillsIcons = [
 		bgColor: "bg-blue-900/30",
 	},
 	{
-		icon: faServer,
+		icon: iconsObj.iconServer,
 		title: "Backend",
 		techStack: ["Node.js", "REST API"],
 
@@ -85,7 +76,7 @@ export const skillsIcons = [
 		bgColor: "bg-purple-900/30",
 	},
 	{
-		icon: faTools,
+		icon: iconsObj.iconTools,
 		title: "Narzędzia",
 		techStack: ["Git", "Webpack", "Vite", "Jest", "VS Code"],
 		textColor: "text-indigo-400",
@@ -95,23 +86,34 @@ export const skillsIcons = [
 
 export const specializationList = [
 	{
-		icon: faCheckCircle,
+		icon: iconsObj.iconCheck,
 		text: "Tworzenie responsywnych interfejsów użytkownika",
 	},
 	{
-		icon: faCheckCircle,
+		icon: iconsObj.iconCheck,
 		text: "Optymalizacja wydajności aplikacji webowych",
 	},
 	{
-		icon: faCheckCircle,
+		icon: iconsObj.iconCheck,
 		text: "Implementacja animacji i interaktywnych elementów",
 	},
 	{
-		icon: faCheckCircle,
+		icon: iconsObj.iconCheck,
 		text: "Integracja z API i usługami zewnętrznymi",
 	},
 	{
-		icon: faCheckCircle,
+		icon: iconsObj.iconCheck,
 		text: "Tworzenie aplikacji typu Single Page Application",
+	},
+];
+
+export const projectData = [
+	{
+		projectBackground: project1Bg,
+		title: "Admin Dashboard",
+		text: "Panel administracyjny z zaawansowaną analityką i zarządzaniem użytkownikami.",
+		tech: ["React", "Redux", "Node.js", "MongoDB"],
+		iconDemo: iconsObj.iconDemo,
+		iconGit: iconsObj.iconGit,
 	},
 ];
