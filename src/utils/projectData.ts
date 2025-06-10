@@ -1,7 +1,7 @@
 import project1Bg from "../assets/svg/backgrounds/projectBg.svg";
 import { iconsObj } from "../assets/svg/icons/icons";
-
-export const projectData = [
+import type { projectDataProps } from "../types/types";
+export const projectData: projectDataProps[] = [
 	{
 		projectBackground: project1Bg,
 		title: "Coming soon...",

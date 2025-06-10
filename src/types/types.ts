@@ -29,7 +29,7 @@ export type SkillsCardProps = {
 export type ParagraphProps = {
 	textColor: string;
 	margin?: string;
-	text: string;
+	content: string;
 };
 
 export type CardProps = {
@@ -57,4 +57,39 @@ export type SectionProps = {
 export type SectionHeaderProps = {
 	normalText: string;
 	gradientText: string;
+};
+
+export type navAndSocialLinksProps = {
+	icon?: IconProp;
+	label: string;
+	href: string;
+};
+export type aboutIconsDataProps = {
+	icon: IconProp;
+	title: string;
+	text: string;
+	color: string;
+	bgColor: string;
+};
+
+export type projectDataProps = {
+	projectBackground: string;
+	title: string;
+	text: string;
+	tech: string[];
+	iconDemo: IconProp;
+	iconGit: IconProp;
+};
+
+export type skillIconsDataProps = {
+	icon: IconProp;
+	title: string;
+	techStack: string[];
+	textColor: string;
+	bgColor: string;
+};
+
+export type specializationListProps = {
+	icon: IconProp;
+	text: string;
 };

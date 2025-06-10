@@ -1,5 +1,5 @@
 import { Card } from "../../ui/Card";
-import { aboutIcons } from "../../../utils/aboutIconsData";
+import { aboutIcons } from "../../../utils/aboutSectionData";
 import { MyValuesCard } from "../../ui/MyValuesCard";
 
 import { Section } from "../../ui/Section";

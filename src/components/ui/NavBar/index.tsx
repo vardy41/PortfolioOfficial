@@ -1,15 +1,7 @@
 import { useState } from "react";
-
+import { navLinks } from "../../../utils/navLinks";
 export const NavBar = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-	const navLinks = [
-		{ label: "Home", href: "#home" },
-		{ label: "O mnie", href: "#about" },
-		{ label: "Umiejętności", href: "#skills" },
-		{ label: "Projekty", href: "#projects" },
-		{ label: "Kontakt", href: "#contact" },
-	];
 
 	function handleMenuToggle() {
 		setMobileMenuOpen((prev) => !prev);

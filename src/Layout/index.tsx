@@ -9,7 +9,7 @@ export const Layout = () => {
 	return (
 		<>
 			<div
-				className="fixed inset-0 -z-10 bg-slate-900 bg-cover bg-center bg-no-repeat"
+				className="fixed inset-0 -z-10 bg-slate-900 bg-cover bg-center bg-no-repeat "
 				style={{ backgroundImage: `url(${bg})` }}
 			/>
 			<NavBar />

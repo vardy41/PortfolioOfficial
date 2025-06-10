@@ -1,6 +1,6 @@
 import { iconsObj } from "../assets/svg/icons/icons";
-
-export const specializationList = [
+import type { specializationListProps } from "../types/types";
+export const specializationList: specializationListProps[] = [
 	{
 		icon: iconsObj.iconCheck,
 		text: "Tworzenie responsywnych interfejsów użytkownika",

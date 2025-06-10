@@ -1,6 +1,6 @@
 import { iconsObj } from "../assets/svg/icons/icons";
-
-export const socialLinks = [
+import type { navAndSocialLinksProps } from "../types/types";
+export const socialLinks: navAndSocialLinksProps[] = [
 	{
 		icon: iconsObj.iconGit,
 		href: "https://github.com/vardy41",

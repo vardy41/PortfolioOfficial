@@ -1,6 +1,6 @@
 import { iconsObj } from "../assets/svg/icons/icons";
-
-export const skillsIcons = [
+import type { skillIconsDataProps } from "../types/types";
+export const skillsIcons: skillIconsDataProps[] = [
 	{
 		icon: iconsObj.iconCode,
 		title: "Frontend",

@@ -1,6 +1,6 @@
 import { iconsObj } from "../assets/svg/icons/icons";
-
-export const aboutIcons = [
+import type { aboutIconsDataProps } from "../types/types";
+export const aboutIcons: aboutIconsDataProps[] = [
 	{
 		icon: iconsObj.iconCode,
 		title: "Czysty kod",
