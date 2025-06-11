@@ -21,7 +21,7 @@ export const ProjectCard = ({
 			</div>
 			<div className="p-6">
 				<h3 className="text-xl font-semibold mb-2 text-white">{title}</h3>
-				<Paragraph textColor="text-slate-400" margin="mb-4" text={text} />
+				<Paragraph textColor="text-slate-400" margin="mb-4" content={text} />
 				<div className="flex flex-wrap gap-2 mb-4">
 					{tech.map((techItem, index) => (
 						<span

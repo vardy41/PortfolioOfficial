@@ -46,19 +46,19 @@ export const Skills = () => {
 					<Paragraph
 						textColor="text-slate-300"
 						margin="mb-4"
-						text="Nieustannie poszerzam swoją wiedzę i umiejętności, śledząc
+						content="Nieustannie poszerzam swoją wiedzę i umiejętności, śledząc
 							najnowsze trendy i technologie w świecie frontend developmentu."
 					/>
 					<Paragraph
 						textColor="text-slate-300"
 						margin="mb-4"
-						text="Regularnie uczestniczę w konferencjach, webinarach i kursach
+						content="Regularnie uczestniczę w konferencjach, webinarach i kursach
 							online, aby być na bieżąco z najlepszymi praktykami i innowacjami
 							w branży."
 					/>
 					<Paragraph
 						textColor="text-slate-300"
-						text="Aktywnie udzielam się w społeczności programistycznej, dzieląc się
+						content="Aktywnie udzielam się w społeczności programistycznej, dzieląc się
 							wiedzą i doświadczeniem poprzez artykuły i open source."
 					/>
 				</div>

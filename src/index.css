@@ -43,4 +43,9 @@
 
 body {
 	position: relative;
+	background-color: oklch(13% 0.028 261.692);
+}
+
+.accent-color {
+	color: #4f46e5;
 }

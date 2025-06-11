@@ -12,9 +12,9 @@ export const NavBar = () => {
 	}
 
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
-			<div className="container mx-auto px-4 py-4 flex justify-between items-center">
-				<a href="#home" className="text-2xl font-bold gradient-text">
+		<header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-slate-800 bg-gray-950">
+			<nav className="container mx-auto px-4 py-4 flex justify-between items-center bg-gray-950">
+				<a href="#home" className="text-2xl font-bold accent-color">
 					Dr<span className="text-white">Dev</span>
 				</a>
 
@@ -28,12 +28,11 @@ export const NavBar = () => {
 					<span className="w-6 h-0.5 bg-white" />
 				</button>
 
-				{/* Linki nawigacyjne */}
 				<div
 					className={`
 						${mobileMenuOpen ? "block" : "hidden"} 
 						md:flex md:space-x-8 md:items-center 
-						absolute md:static top-full left-0 w-full md:w-auto bg-slate-900 md:bg-transparent px-4 py-4 md:p-0 border-t border-slate-800 md:border-0
+						absolute md:static top-full left-0 w-full md:w-auto bg-gray-950 md:bg-transparent px-4 py-4 md:p-0 border-t border-slate-800 md:border-0
 					`}>
 					{navLinks.map((link) => (
 						<a
@@ -45,7 +44,7 @@ export const NavBar = () => {
 						</a>
 					))}
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</header>
 	);
 };

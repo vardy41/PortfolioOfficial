@@ -29,6 +29,7 @@ export type SkillsCardProps = {
 export type ParagraphProps = {
 	textColor: string;
 	margin?: string;
+	textSize?: string;
 	content: string;
 };
 
@@ -56,11 +57,11 @@ export type SectionProps = {
 
 export type SectionHeaderProps = {
 	normalText: string;
-	gradientText: string;
+	text: string;
 };
 
 export type navAndSocialLinksProps = {
-	icon?: IconProp;
+	icon: IconProp;
 	label: string;
 	href: string;
 };
