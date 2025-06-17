@@ -55,15 +55,17 @@ export type SectionProps = {
 	id: string;
 };
 
-export type SectionHeaderProps = {
+export type SectionsHeaderProps = {
 	normalText: string;
-	text: string;
+	blueText: string;
 };
 
 export type navAndSocialLinksProps = {
 	icon: IconProp;
 	label: string;
 	href: string;
+	social: string;
+	nickName: string;
 };
 export type aboutIconsDataProps = {
 	icon: IconProp;
@@ -93,4 +95,11 @@ export type skillIconsDataProps = {
 export type specializationListProps = {
 	icon: IconProp;
 	text: string;
+};
+
+export type ContactCardProps = {
+	icon: IconProp;
+	socialName: string;
+	nick: string;
+	href: string;
 };

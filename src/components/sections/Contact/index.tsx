@@ -1,14 +1,22 @@
-import { HeaderLine } from "../../ui/HeaderLine";
+import { socialLinks } from "../../../utils/socialLinksData";
+import { ContactCard } from "../../ui/ContactCard";
 import { Section } from "../../ui/Section";
+import { SectionsHeader } from "../../ui/SectionsHeader";
+
 export const Contact = () => {
 	return (
 		<Section id="contact" className="bg-slate-900/50">
-			<div className="text-center mb-16">
-				<h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-					Skontaktuj <span className="gradient-text">się</span>
-				</h2>
-				<HeaderLine />
-			</div>
+			<SectionsHeader normalText="Kontakt" blueText="" />
+			<ul>
+				{socialLinks.map((contactObj) => (
+					<ContactCard
+						href={contactObj.href}
+						icon={contactObj.icon}
+						socialName={contactObj.social}
+						nick={contactObj.nickName}
+					/>
+				))}
+			</ul>
 		</Section>
 	);
 };

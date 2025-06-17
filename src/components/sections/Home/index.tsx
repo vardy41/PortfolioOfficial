@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialLinks } from "../../../utils/socialLinksData";
 import { Section } from "../../ui/Section";
+import { Button } from "../../ui/Button";
+
 export const Home = () => {
 	return (
 		<Section
@@ -26,16 +28,12 @@ export const Home = () => {
 
 					{/* Przycisk CTA */}
 					<div className="flex flex-wrap gap-4">
-						<a
-							href="#contact"
-							className="px-6 py-3 bg-accent-blue rounded-lg font-medium hover:shadow-lg hover:shadow-purple-500/20 transition-all text-white">
+						<Button variant="primary" href="#contact">
 							Skontaktuj się
-						</a>
-						<a
-							href="#projects"
-							className="px-6 py-3 border bg-gray-800 rounded-lg font-medium hover:border-purple-500 transition-all text-white">
+						</Button>
+						<Button variant="secondary" href="#projects">
 							Zobacz projekty
-						</a>
+						</Button>
 					</div>
 
 					{/* Ikony społecznościowe */}

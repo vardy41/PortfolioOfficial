@@ -5,15 +5,18 @@ import { paragraphsContent } from "../../../utils/aboutSectionData";
 import { Section } from "../../ui/Section";
 import { SectionsHeader } from "../../ui/SectionsHeader";
 import { Paragraph } from "../../ui/Paragraph";
+import { CardHeading } from "../../ui/CardHeading";
+
 export const About = () => {
 	return (
 		<Section id="about" className="relative" containerClass="sm:px-6 lg:px-8">
-			<SectionsHeader normalText="O" gradientText="mnie" />
+			<SectionsHeader normalText="O" blueText="mnie" />
 			<div className="flex flex-col gap-12 items-start">
 				{/* Opis */}
-				<div className=" bg-gray-950 border p-6 rounded-xl space-y-4 w-full">
+				<div className="card p-6 rounded-xl space-y-4 w-full">
 					{paragraphsContent.map((text) => (
 						<Paragraph
+							key={text}
 							textColor="text-slate-400"
 							textSize="text-base"
 							content={text}
@@ -21,6 +24,7 @@ export const About = () => {
 					))}
 				</div>
 
+				{/* Edukacja i doświadczenie */}
 				<div className="grid sm:grid-cols-2 gap-6 w-full">
 					<Card
 						title="Edukacja"
@@ -37,9 +41,9 @@ export const About = () => {
 				{/* Moje wartości */}
 				<div className="w-full">
 					<div className="card p-6 rounded-xl">
-						<h3 className="text-2xl font-semibold mb-6 text-blue-500">
+						<CardHeading color="text-blue-500" marginBottom="mb-6">
 							Moje wartości
-						</h3>
+						</CardHeading>
 						<div className="space-y-6">
 							{aboutIcons.map((iconObj) => (
 								<MyValuesCard

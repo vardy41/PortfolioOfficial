@@ -5,15 +5,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Paragraph } from "../../ui/Paragraph";
 import { Section } from "../../ui/Section";
 import { SectionsHeader } from "../../ui/SectionsHeader";
+import { CardHeading } from "../../ui/CardHeading";
 
 export const Skills = () => {
 	return (
 		<Section id="skills" className="bg-slate-900/50">
-			<SectionsHeader normalText="Moje" gradientText="umiejętności" />
+			<SectionsHeader normalText="Moje" blueText="umiejętności" />
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-				{skillsIcons.map((iconObj, index) => (
+				{skillsIcons.map((iconObj) => (
 					<SkillsCard
-						key={index}
+						key={iconObj.title}
 						icon={iconObj.icon}
 						title={iconObj.title}
 						tech={iconObj.techStack}
@@ -24,9 +25,9 @@ export const Skills = () => {
 			</div>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 				<div className="card p-6 rounded-xl">
-					<h3 className="text-2xl font-semibold mb-4 gradient-text">
+					<CardHeading color="text-white" marginBottom="mb-4">
 						Specjalizacje
-					</h3>
+					</CardHeading>
 					<ul className="space-y-4">
 						{specializationList.map((item, index) => (
 							<li key={index} className="flex items-center gap-4">
@@ -40,26 +41,26 @@ export const Skills = () => {
 				</div>
 
 				<div className="card p-6 rounded-xl">
-					<h3 className="text-2xl font-semibold mb-4 gradient-text">
+					<CardHeading color="text-white" marginBottom="mb-4">
 						Ciągły rozwój
-					</h3>
+					</CardHeading>
 					<Paragraph
 						textColor="text-slate-300"
 						margin="mb-4"
 						content="Nieustannie poszerzam swoją wiedzę i umiejętności, śledząc
-							najnowsze trendy i technologie w świecie frontend developmentu."
+              najnowsze trendy i technologie w świecie frontend developmentu."
 					/>
 					<Paragraph
 						textColor="text-slate-300"
 						margin="mb-4"
 						content="Regularnie uczestniczę w konferencjach, webinarach i kursach
-							online, aby być na bieżąco z najlepszymi praktykami i innowacjami
-							w branży."
+              online, aby być na bieżąco z najlepszymi praktykami i innowacjami
+              w branży."
 					/>
 					<Paragraph
 						textColor="text-slate-300"
 						content="Aktywnie udzielam się w społeczności programistycznej, dzieląc się
-							wiedzą i doświadczeniem poprzez artykuły i open source."
+              wiedzą i doświadczeniem poprzez artykuły i open source."
 					/>
 				</div>
 			</div>

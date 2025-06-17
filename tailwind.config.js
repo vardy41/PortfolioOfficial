@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				"accent-blue": "#4f46e5;",
+				"accent-blue": "#4f46e5", // ← usunięto średnik
 			},
 		},
 	},
