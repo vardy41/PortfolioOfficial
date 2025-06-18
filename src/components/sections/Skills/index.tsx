@@ -7,6 +7,25 @@ import { Section } from "../../ui/Section";
 import { SectionsHeader } from "../../ui/SectionsHeader";
 import { CardHeading } from "../../ui/CardHeading";
 import { FadeInSection } from "../../ui/FadeInSection";
+const specializationElements = specializationList.map(
+	({ icon: Icon, text }, index) => (
+		<li key={index} className="flex items-center gap-4">
+			<div className="text-blue-400 text-lg">
+				<Icon />
+			</div>
+			<span className="text-slate-300 text-base">{text}</span>
+		</li>
+	)
+);
+
+const skillsParagraphElements = skillsParagraphContent.map((text, index) => (
+	<Paragraph
+		key={index}
+		textColor="text-slate-300"
+		margin="mb-4"
+		content={text}
+	/>
+));
 
 export const Skills = () => {
 	return (
@@ -35,16 +54,7 @@ export const Skills = () => {
 						<CardHeading color="text-white" marginBottom="mb-4">
 							Specjalizacje
 						</CardHeading>
-						<ul className="space-y-4">
-							{specializationList.map(({ icon: Icon, text }, index) => (
-								<li key={index} className="flex items-center gap-4">
-									<div className="text-blue-400 text-lg">
-										<Icon />
-									</div>
-									<span className="text-slate-300 text-base">{text}</span>
-								</li>
-							))}
-						</ul>
+						<ul className="space-y-4">{specializationElements}</ul>
 					</div>
 				</FadeInSection>
 
@@ -53,13 +63,7 @@ export const Skills = () => {
 						<CardHeading color="text-white" marginBottom="mb-4">
 							Ciągły rozwój
 						</CardHeading>
-						{skillsParagraphContent.map((text) => (
-							<Paragraph
-								textColor="text-slate-300"
-								margin="mb-4"
-								content={text}
-							/>
-						))}
+						{skillsParagraphElements}
 					</div>
 				</FadeInSection>
 			</div>

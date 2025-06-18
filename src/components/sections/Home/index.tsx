@@ -3,7 +3,7 @@ import { socialLinks } from "../../../utils/socialLinksData";
 import { Section } from "../../ui/Section";
 import { Button } from "../../ui/Button";
 import { FadeInSection } from "../../ui/FadeInSection";
-
+import avatar from "../../../assets/svg/avatar/avatar.webp";
 const socialLinksElements = socialLinks.map(({ icon: Icon, href, label }) => (
 	<a
 		key={label}
@@ -50,7 +50,14 @@ export const Home = React.memo(() => {
 						<div className="relative w-64 h-64 md:w-80 md:h-80">
 							<div className="absolute inset-0 rounded-full bg-accent-blue "></div>
 							<div className="absolute inset-1 rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
-								{/* Tutaj możesz dodać zdjęcie */}
+								<img
+									src={avatar}
+									alt="Twój opis avatara"
+									loading="lazy"
+									width="250"
+									height="250"
+									decoding="async"
+								/>
 							</div>
 						</div>
 					</div>
