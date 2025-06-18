@@ -1,6 +1,6 @@
-import type { navAndSocialLinksProps } from "../types/types";
+import type { navLinksProps } from "../types/types";
 
-export const navLinks: navAndSocialLinksProps[] = [
+export const navLinks: navLinksProps[] = [
 	{ label: "Home", href: "#home" },
 	{ label: "O mnie", href: "#about" },
 	{ label: "Umiejętności", href: "#skills" },

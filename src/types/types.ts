@@ -130,3 +130,8 @@ export type MenuProps = {
 export type HamburgerButtonProps = {
 	onClick: () => void;
 };
+
+export type navLinksProps = {
+	label: string;
+	href: string;
+};
