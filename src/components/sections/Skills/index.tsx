@@ -1,3 +1,4 @@
+import { skillsParagraphContent } from "../../../utils/paragraphsContent";
 import { SkillsCard } from "../../ui/SkillsCard";
 import { skillsIcons } from "../../../utils/skillIconsData";
 import { specializationList } from "../../../utils/specializationListData";
@@ -52,24 +53,13 @@ export const Skills = () => {
 						<CardHeading color="text-white" marginBottom="mb-4">
 							Ciągły rozwój
 						</CardHeading>
-						<Paragraph
-							textColor="text-slate-300"
-							margin="mb-4"
-							content="Nieustannie poszerzam swoją wiedzę i umiejętności, śledząc
-              najnowsze trendy i technologie w świecie frontend developmentu."
-						/>
-						<Paragraph
-							textColor="text-slate-300"
-							margin="mb-4"
-							content="Regularnie uczestniczę w konferencjach, webinarach i kursach
-              online, aby być na bieżąco z najlepszymi praktykami i innowacjami
-              w branży."
-						/>
-						<Paragraph
-							textColor="text-slate-300"
-							content="Aktywnie udzielam się w społeczności programistycznej, dzieląc się
-              wiedzą i doświadczeniem poprzez artykuły i open source."
-						/>
+						{skillsParagraphContent.map((text) => (
+							<Paragraph
+								textColor="text-slate-300"
+								margin="mb-4"
+								content={text}
+							/>
+						))}
 					</div>
 				</FadeInSection>
 			</div>

@@ -1,9 +1,20 @@
+import React from "react";
 import { socialLinks } from "../../../utils/socialLinksData";
 import { Section } from "../../ui/Section";
 import { Button } from "../../ui/Button";
 import { FadeInSection } from "../../ui/FadeInSection";
 
-export const Home = () => {
+const socialLinksElements = socialLinks.map(({ icon: Icon, href, label }) => (
+	<a
+		key={label}
+		href={href}
+		aria-label={label}
+		className="text-slate-400 hover:text-white transition-colors text-2xl">
+		<Icon />
+	</a>
+));
+
+export const Home = React.memo(() => {
 	return (
 		<Section
 			id="home"
@@ -33,17 +44,7 @@ export const Home = () => {
 								Zobacz projekty
 							</Button>
 						</div>
-						<div className="flex gap-4 pt-1">
-							{socialLinks.map(({ icon: Icon, href, label }) => (
-								<a
-									key={label}
-									href={href}
-									aria-label={label}
-									className="text-slate-400 hover:text-white transition-colors text-2xl">
-									<Icon />
-								</a>
-							))}
-						</div>
+						<div className="flex gap-4 pt-1">{socialLinksElements}</div>
 					</div>
 					<div className="md:w-1/2 flex justify-center">
 						<div className="relative w-64 h-64 md:w-80 md:h-80">
@@ -57,4 +58,4 @@ export const Home = () => {
 			</FadeInSection>
 		</Section>
 	);
-};
+});

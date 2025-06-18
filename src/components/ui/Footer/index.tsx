@@ -1,7 +1,7 @@
 import { Paragraph } from "../Paragraph";
 import { socialLinks } from "../../../utils/socialLinksData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export const Footer = () => {
+import React from "react";
+export const Footer = React.memo(() => {
 	return (
 		<footer className="py-6 border-t border-slate-800">
 			<div className="flex flex-col items-center gap-2">
@@ -19,4 +19,4 @@ export const Footer = () => {
 			</div>
 		</footer>
 	);
-};
+});

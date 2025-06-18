@@ -121,3 +121,12 @@ export type FadeInSectionProps = {
 	className?: string;
 	delay: number;
 };
+
+export type MenuProps = {
+	mobileMenuOpen: boolean;
+	onLinkClick: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void;
+};
+
+export type HamburgerButtonProps = {
+	onClick: () => void;
+};
