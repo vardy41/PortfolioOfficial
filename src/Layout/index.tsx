@@ -1,9 +1,12 @@
+import React, { Suspense } from "react";
+import { Footer } from "../components/ui/Footer";
 import { NavBar } from "../components/ui/NavBar";
-import { About } from "../components/sections/About";
 import { Home } from "../components/sections/Home";
-import { Skills } from "../components/sections/Skills";
-import { Projects } from "../components/sections/Projects";
-import { Contact } from "../components/sections/Contact";
+
+const About = React.lazy(() => import("../components/sections/About"));
+const Skills = React.lazy(() => import("../components/sections/Skills"));
+const Projects = React.lazy(() => import("../components/sections/Projects"));
+const Contact = React.lazy(() => import("../components/sections/Contact"));
 
 export const Layout = () => {
 	return (
@@ -11,11 +14,14 @@ export const Layout = () => {
 			<NavBar />
 			<main className="min-h-screen relative px-4 sm:px-6 lg:px-8">
 				<Home />
-				<About />
-				<Skills />
-				<Projects />
-				<Contact />
+				<Suspense fallback={<div>Ładowanie...</div>}>
+					<About />
+					<Skills />
+					<Projects />
+					<Contact />
+				</Suspense>
 			</main>
+			<Footer />
 			{/* FOOTER */}
 		</>
 	);

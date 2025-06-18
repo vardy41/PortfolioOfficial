@@ -1,6 +1,5 @@
-import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import type { ReactNode } from "react";
-
+import type { IconType } from "react-icons/lib";
 export type GradientBlobProps = {
 	className: string;
 	color: string;
@@ -11,7 +10,7 @@ export type LayoutProps = {
 };
 
 export type MyValuesCardProps = {
-	icon: IconProp;
+	icon: IconType;
 	title: string;
 	text: string;
 	textColor: string;
@@ -19,7 +18,7 @@ export type MyValuesCardProps = {
 };
 
 export type SkillsCardProps = {
-	icon: IconProp;
+	icon: IconType;
 	title: string;
 	tech: string[];
 	textColor: string;
@@ -44,8 +43,8 @@ export type ProjectCardProps = {
 	title: string;
 	text: string;
 	tech: string[];
-	iconDemo: IconProp;
-	iconGit: IconProp;
+	iconDemo: IconType;
+	iconGit: IconType;
 };
 
 export type SectionProps = {
@@ -61,14 +60,14 @@ export type SectionsHeaderProps = {
 };
 
 export type navAndSocialLinksProps = {
-	icon: IconProp;
+	icon: IconType;
 	label: string;
 	href: string;
 	social: string;
 	nickName: string;
 };
 export type aboutIconsDataProps = {
-	icon: IconProp;
+	icon: IconType;
 	title: string;
 	text: string;
 	color: string;
@@ -80,12 +79,12 @@ export type projectDataProps = {
 	title: string;
 	text: string;
 	tech: string[];
-	iconDemo: IconProp;
-	iconGit: IconProp;
+	iconDemo: IconType;
+	iconGit: IconType;
 };
 
 export type skillIconsDataProps = {
-	icon: IconProp;
+	icon: IconType;
 	title: string;
 	techStack: string[];
 	textColor: string;
@@ -93,13 +92,32 @@ export type skillIconsDataProps = {
 };
 
 export type specializationListProps = {
-	icon: IconProp;
+	icon: IconType;
 	text: string;
 };
 
 export type ContactCardProps = {
-	icon: IconProp;
+	icon: IconType;
 	socialName: string;
 	nick: string;
 	href: string;
+	label: string;
+};
+
+export type CardHeadingProps = {
+	children: ReactNode;
+	color?: string; // e.g. "text-white" or "text-blue-500"
+	marginBottom?: string; // e.g. "mb-4", "mb-6"
+	className?: string;
+};
+
+export type CardWrapperProps = {
+	children: ReactNode;
+	className?: string;
+};
+
+export type FadeInSectionProps = {
+	children: ReactNode;
+	className?: string;
+	delay: number;
 };

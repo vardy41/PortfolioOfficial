@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { navLinks } from "../../../utils/navLinks";
+
 export const NavBar = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -7,18 +8,31 @@ export const NavBar = () => {
 		setMobileMenuOpen((prev) => !prev);
 	}
 
-	function handleLinkClick() {
-		setMobileMenuOpen(false); // zamyka menu po kliknięciu linku
+	function handleLinkClick(
+		e: React.MouseEvent<HTMLAnchorElement>,
+		href: string
+	) {
+		e.preventDefault();
+		setMobileMenuOpen(false);
+
+		const id = href.replace("#", "");
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
 	}
 
 	return (
-		<header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-slate-800 bg-gray-950">
+		<header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-800 bg-gray-950">
 			<nav className="container mx-auto px-4 py-4 flex justify-between items-center bg-gray-950">
-				<a href="#home" className="text-2xl font-bold accent-color">
+				<a
+					href="#home"
+					onClick={(e) => handleLinkClick(e, "#home")}
+					className="text-2xl font-bold accent-color">
 					Dr<span className="text-white">Dev</span>
 				</a>
 
-				{/* Przycisk hamburgera */}
+				{/* Hamburger menu */}
 				<button
 					className="md:hidden flex flex-col justify-center items-center space-y-1 w-8 h-8"
 					onClick={handleMenuToggle}
@@ -29,18 +43,18 @@ export const NavBar = () => {
 				</button>
 
 				<div
-					className={`
-						${mobileMenuOpen ? "block" : "hidden"} 
-						md:flex md:space-x-8 md:items-center 
-						absolute md:static top-full left-0 w-full md:w-auto bg-gray-950 md:bg-transparent px-4 py-4 md:p-0 border-t border-slate-800 md:border-0
-					`}>
+					className={`${
+						mobileMenuOpen ? "block" : "hidden"
+					} md:flex md:space-x-8 md:items-center 
+            absolute md:static top-full left-0 w-full md:w-auto bg-gray-950 md:bg-transparent px-4 py-4 md:p-0 border-t border-slate-800 md:border-0`}>
 					{navLinks.map((link) => (
 						<a
 							key={link.label}
 							href={link.href}
-							onClick={handleLinkClick}
-							className="block md:inline text-white hover:text-purple-400 transition-colors py-2 md:py-0">
+							onClick={(e) => handleLinkClick(e, link.href)}
+							className="group relative block md:inline py-2 md:py-0 text-white transition-colors hover:text-accent-blue">
 							{link.label}
+							<span className="absolute left-0 -bottom-1 h-1 bg-accent-blue w-0 group-hover:w-full transition-all duration-300" />
 						</a>
 					))}
 				</div>

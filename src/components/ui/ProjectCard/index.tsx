@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { ProjectCardProps } from "../../../types/types";
 import { Paragraph } from "../Paragraph";
 
@@ -7,8 +6,8 @@ export const ProjectCard = ({
 	title,
 	text,
 	tech,
-	iconDemo,
-	iconGit,
+	iconDemo: IconDemo,
+	iconGit: IconGit,
 }: ProjectCardProps) => {
 	return (
 		<div className="card rounded-xl overflow-hidden">
@@ -35,14 +34,14 @@ export const ProjectCard = ({
 				<div className="flex justify-between">
 					<a
 						href="#"
-						className="text-blue-400 hover:text-blue-300 transition-colors">
-						<FontAwesomeIcon className="mr-2" icon={iconDemo} />
+						className="flex  items-center text-blue-400 hover:text-blue-300 transition-colors">
+						<IconDemo className="mr-2" />
 						Demo
 					</a>
 					<a
 						href="#"
-						className="text-purple-400 hover:text-purple-300 transition-colors">
-						<FontAwesomeIcon className="mr-1" icon={iconGit} />
+						className="flex items-center text-purple-400 hover:text-purple-300 transition-colors">
+						<IconGit className="mr-1" />
 						Git
 					</a>
 				</div>

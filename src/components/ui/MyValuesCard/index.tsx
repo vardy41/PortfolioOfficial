@@ -1,14 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { MyValuesCardProps } from "../../../types/types";
 import React from "react";
 
 export const MyValuesCard = React.memo(
-	({ icon, title, text, textColor, bgColor }: MyValuesCardProps) => {
+	({ icon: Icon, title, text, textColor, bgColor }: MyValuesCardProps) => {
 		return (
 			<div className="flex gap-4">
 				<div
 					className={`${bgColor} flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center`}>
-					<FontAwesomeIcon className={`${textColor} text-xl`} icon={icon} />
+					<Icon className={`${textColor} text-xl`} />
 				</div>
 				<div>
 					<h3 className="text-lg sm:text-xl font-medium text-white mb-2">

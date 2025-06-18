@@ -1,5 +1,6 @@
 import { iconsObj } from "../assets/svg/icons/icons";
 import type { navAndSocialLinksProps } from "../types/types";
+
 export const socialLinks: navAndSocialLinksProps[] = [
 	{
 		icon: iconsObj.iconGit,
@@ -19,7 +20,7 @@ export const socialLinks: navAndSocialLinksProps[] = [
 		icon: iconsObj.iconEnvelope,
 		href: "mailto:d.mikolajj@gmail.com",
 		label: "Email",
-		social: "Gmail",
+		social: "Email",
 		nickName: "d.mikolajj@gmail.com",
 	},
 ];
