@@ -36,13 +36,13 @@ export const About = () => {
 				{/* Edukacja i doświadczenie */}
 				<FadeInSection delay={400}>
 					<div className="grid sm:grid-cols-2 gap-6 w-full">
-						{/* <FadeInSection delay={450}>
+						<FadeInSection delay={450}>
 							<Card
 								title="Edukacja"
 								description="Magister Informatyka Stosowana w Biznesie"
 								company="WSZiB Kraków"
 							/>
-						</FadeInSection> */}
+						</FadeInSection>
 						<FadeInSection delay={550}>
 							<Card
 								title="Doświadczenie"

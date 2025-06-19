@@ -51,7 +51,7 @@ export const Skills = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 				<FadeInSection delay={300}>
 					<div className="card p-6 rounded-xl">
-						<CardHeading color="text-white" marginBottom="mb-4">
+						<CardHeading color="text-blue-500" marginBottom="mb-4">
 							Specjalizacje
 						</CardHeading>
 						<ul className="space-y-4">{specializationElements}</ul>
@@ -60,7 +60,7 @@ export const Skills = () => {
 
 				<FadeInSection delay={500}>
 					<div className="card p-6 rounded-xl">
-						<CardHeading color="text-white" marginBottom="mb-4">
+						<CardHeading color="text-blue-500" marginBottom="mb-4">
 							Ciągły rozwój
 						</CardHeading>
 						{skillsParagraphElements}
