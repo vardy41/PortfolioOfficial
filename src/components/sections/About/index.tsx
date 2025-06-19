@@ -2,7 +2,7 @@ import { FadeInSection } from "../../ui/FadeInSection";
 import { Card } from "../../ui/Card";
 import { aboutIcons } from "../../../utils/aboutSectionData";
 import { MyValuesCard } from "../../ui/MyValuesCard";
-import { paragraphsContent } from "../../../utils/aboutSectionData";
+import { aboutParagraphsContent } from "../../../utils/paragraphsContent";
 import { Section } from "../../ui/Section";
 import { SectionsHeader } from "../../ui/SectionsHeader";
 import { Paragraph } from "../../ui/Paragraph";
@@ -21,7 +21,7 @@ export const About = () => {
 				{/* Opis */}
 				<FadeInSection delay={100}>
 					<div className="card p-6 rounded-xl space-y-4 w-full">
-						{paragraphsContent.map((text, index) => (
+						{aboutParagraphsContent.map((text, index) => (
 							<FadeInSection key={index} delay={150 + index * 100}>
 								<Paragraph
 									textColor="text-slate-400"
