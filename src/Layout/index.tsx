@@ -1,13 +1,9 @@
+import type { LazyWithPreload } from "../types/types";
 import React, { Suspense, useEffect } from "react";
 import { Footer } from "../components/ui/Footer";
 import { NavBar } from "../components/ui/NavBar";
 import { Home } from "../components/sections/Home";
 import { Loader } from "../components/ui/Loader";
-
-type LazyWithPreload<T extends React.ComponentType<any>> =
-	React.LazyExoticComponent<T> & {
-		preload: () => Promise<{ default: T }>;
-	};
 
 function lazyWithPreload<T extends React.ComponentType<any>>(
 	factory: () => Promise<{ default: T }>

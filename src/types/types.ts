@@ -135,3 +135,7 @@ export type navLinksProps = {
 	label: string;
 	href: string;
 };
+export type LazyWithPreload<T extends React.ComponentType<any>> =
+	React.LazyExoticComponent<T> & {
+		preload: () => Promise<{ default: T }>;
+	};
