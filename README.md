@@ -1,4 +1,3 @@
-# PortfolioOfficial
 # 🌐 Portfolio
 
 Nowoczesne, szybkie i skalowalne portfolio stworzone z myślą o przejrzystości, wydajności oraz responsywności. Projekt zbudowany w oparciu o **React**, **TypeScript** oraz **Tailwind CSS**.
