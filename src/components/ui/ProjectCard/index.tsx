@@ -16,8 +16,9 @@ export const ProjectCard = ({
 			<div className="project-image h-48 bg-slate-800">
 				<img
 					src={projectBackground}
-					alt={`${title} background`}
+					alt={`${title} project background`}
 					className="w-full h-full object-cover"
+					loading="lazy"
 				/>
 			</div>
 			<div className="p-6">
@@ -37,7 +38,7 @@ export const ProjectCard = ({
 					<a
 						target="_blank"
 						href={hrefDemo}
-						className="flex  items-center text-blue-400 hover:text-blue-300 transition-colors">
+						className="flex items-center text-blue-400 hover:text-blue-300 transition-colors">
 						<IconDemo className="mr-2" />
 						Demo
 					</a>
