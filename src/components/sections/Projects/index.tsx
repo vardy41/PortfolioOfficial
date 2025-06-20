@@ -23,6 +23,8 @@ export const Projects = () => {
 							tech={projectObj.tech}
 							iconDemo={projectObj.iconDemo}
 							iconGit={projectObj.iconGit}
+							hrefGit={projectObj.hrefGit}
+							hrefDemo={projectObj.hrefDemo}
 						/>
 					</FadeInSection>
 				))}

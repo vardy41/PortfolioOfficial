@@ -8,6 +8,8 @@ export const ProjectCard = ({
 	tech,
 	iconDemo: IconDemo,
 	iconGit: IconGit,
+	hrefGit,
+	hrefDemo,
 }: ProjectCardProps) => {
 	return (
 		<div className="card rounded-xl overflow-hidden">
@@ -33,13 +35,15 @@ export const ProjectCard = ({
 
 				<div className="flex justify-between">
 					<a
-						href="#"
+						target="_blank"
+						href={hrefDemo}
 						className="flex  items-center text-blue-400 hover:text-blue-300 transition-colors">
 						<IconDemo className="mr-2" />
 						Demo
 					</a>
 					<a
-						href="#"
+						target="_blank"
+						href={hrefGit}
 						className="flex items-center text-purple-400 hover:text-purple-300 transition-colors">
 						<IconGit className="mr-1" />
 						Git

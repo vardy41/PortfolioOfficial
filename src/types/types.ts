@@ -45,6 +45,8 @@ export type ProjectCardProps = {
 	tech: string[];
 	iconDemo: IconType;
 	iconGit: IconType;
+	hrefGit: string;
+	hrefDemo: string;
 };
 
 export type SectionProps = {
@@ -81,6 +83,8 @@ export type projectDataProps = {
 	tech: string[];
 	iconDemo: IconType;
 	iconGit: IconType;
+	hrefGit: string;
+	hrefDemo: string;
 };
 
 export type skillIconsDataProps = {
