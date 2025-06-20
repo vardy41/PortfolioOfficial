@@ -7,7 +7,7 @@ export const projectData: projectDataProps[] = [
 	{
 		projectBackground: portfolioImg,
 		title: "Portfolio",
-		text: "Portfolio stworzone z myślą o wydajności, optymalizacji oraz skalowalności, modularny kod a także przyjemne UX",
+		text: "Portfolio stworzone z myślą o wydajności, optymalizacji oraz skalowalności, modularny kod a także przyjemne UX.",
 		tech: ["React", "Typescript", "TailwindCSS"],
 		iconDemo: iconsObj.iconDemo,
 		iconGit: iconsObj.iconGit,
