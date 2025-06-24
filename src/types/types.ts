@@ -35,7 +35,7 @@ export type ParagraphProps = {
 export type CardProps = {
 	title: string;
 	description: string;
-	company: string;
+	company?: string;
 };
 
 export type ProjectCardProps = {

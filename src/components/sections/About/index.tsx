@@ -40,7 +40,7 @@ export const About = () => {
 							<Card
 								title="Edukacja"
 								description="Magister Informatyka Stosowana w Biznesie"
-								company="WSZiB Kraków"
+								// company="WSZiB Kraków"
 							/>
 						</FadeInSection>
 						<FadeInSection delay={550}>
