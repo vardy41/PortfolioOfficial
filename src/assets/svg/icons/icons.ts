@@ -1,37 +1,26 @@
-import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+	FaEnvelope,
+	FaCode,
+	FaMobileAlt,
+	FaTachometerAlt,
+	FaUsers,
+	FaServer,
+	FaTools,
+	FaCheckCircle,
+	FaExternalLinkAlt,
+} from "react-icons/fa";
 
 export const iconsObj = {
-	iconGit: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaGithub }))
-	),
-	iconLinkedin: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaLinkedin }))
-	),
-	iconEnvelope: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaEnvelope }))
-	),
-	iconCode: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaCode }))
-	),
-	iconMobile: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaMobileAlt }))
-	),
-	iconPerformance: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaTachometerAlt }))
-	),
-	iconUsers: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaUsers }))
-	),
-	iconServer: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaServer }))
-	),
-	iconTools: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaTools }))
-	),
-	iconCheck: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaCheckCircle }))
-	),
-	iconDemo: React.lazy(() =>
-		import("react-icons/fa").then((m) => ({ default: m.FaExternalLinkAlt }))
-	),
+	iconGit: FaGithub,
+	iconLinkedin: FaLinkedin,
+	iconEnvelope: FaEnvelope,
+	iconCode: FaCode,
+	iconMobile: FaMobileAlt,
+	iconPerformance: FaTachometerAlt,
+	iconUsers: FaUsers,
+	iconServer: FaServer,
+	iconTools: FaTools,
+	iconCheck: FaCheckCircle,
+	iconDemo: FaExternalLinkAlt,
 };
