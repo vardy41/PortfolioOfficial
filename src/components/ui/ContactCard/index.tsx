@@ -1,9 +1,6 @@
-import React from "react";
 import { CardWrapper } from "../CardWrapper";
-import type { ContactCardProps } from "../../../types/types";
 import { Paragraph } from "../Paragraph";
-
-
+import type { ContactCardWithWrapperProps } from "../../../types/types";
 
 export const ContactCard = ({
 	icon: Icon,
