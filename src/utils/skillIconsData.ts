@@ -1,8 +1,8 @@
-import { iconsObj } from "../assets/svg/icons/icons";
 import type { skillIconsDataProps } from "../types/types";
+import { FaCode, FaServer, FaTools } from "react-icons/fa";
 export const skillsIcons: skillIconsDataProps[] = [
 	{
-		icon: iconsObj.iconCode,
+		icon: FaCode,
 		title: "Frontend",
 		techStack: [
 			"HTML5",
@@ -19,7 +19,7 @@ export const skillsIcons: skillIconsDataProps[] = [
 		bgColor: "bg-blue-900/30",
 	},
 	{
-		icon: iconsObj.iconServer,
+		icon: FaServer,
 		title: "Backend",
 		techStack: ["Node.js", "REST API"],
 
@@ -27,7 +27,7 @@ export const skillsIcons: skillIconsDataProps[] = [
 		bgColor: "bg-purple-900/30",
 	},
 	{
-		icon: iconsObj.iconTools,
+		icon: FaTools,
 		title: "Narzędzia",
 		techStack: ["Git", "Webpack", "Vite", "Jest", "VS Code"],
 		textColor: "text-indigo-400",
