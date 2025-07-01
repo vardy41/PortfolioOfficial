@@ -53,7 +53,6 @@ export const Home = React.memo(() => {
 								<img
 									src={avatar}
 									alt="Superbohater stworzony z pixeli"
-									loading="lazy"
 									width="250"
 									height="250"
 									decoding="async"
