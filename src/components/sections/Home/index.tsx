@@ -52,10 +52,10 @@ export const Home = React.memo(() => {
 							<div className="absolute inset-1 rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
 								<img
 									src={avatar}
-									alt="Twój opis avatara"
+									srcSet="/assets/avatar/avatar-150.webp 150w, /assets/avatar/avatar-250.webp 250w, /assets/avatar/avatar-320.webp 320w"
+									sizes="(max-width: 768px) 150px, 250px"
+									alt="Superbohater stworzony z pixeli"
 									loading="lazy"
-									width="250"
-									height="250"
 									decoding="async"
 								/>
 							</div>
