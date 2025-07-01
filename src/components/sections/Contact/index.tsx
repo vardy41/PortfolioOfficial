@@ -13,15 +13,16 @@ export const Contact = () => {
 
 			<ul>
 				{socialLinks.map((contactObj, index) => (
-					<FadeInSection key={index} delay={100 + index * 150}>
-						<ContactCard
-							href={contactObj.href}
-							icon={contactObj.icon}
-							socialName={contactObj.social}
-							nick={contactObj.nickName}
-							label={contactObj.label}
-						/>
-					</FadeInSection>
+					<ContactCard
+						key={contactObj.label}
+						href={contactObj.href}
+						icon={contactObj.icon}
+						socialName={contactObj.social}
+						nick={contactObj.nickName}
+						label={contactObj.label}
+						Wrapper={FadeInSection} // przekazujesz FadeInSection jako Wrapper
+						wrapperDelay={100 + index * 150} // i delay animacji
+					/>
 				))}
 			</ul>
 		</Section>

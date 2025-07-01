@@ -1,6 +1,9 @@
+import React from "react";
 import { CardWrapper } from "../CardWrapper";
 import type { ContactCardProps } from "../../../types/types";
 import { Paragraph } from "../Paragraph";
+
+
 
 export const ContactCard = ({
 	icon: Icon,
@@ -8,10 +11,13 @@ export const ContactCard = ({
 	socialName,
 	href,
 	label,
-}: ContactCardProps) => {
-	return (
+	Wrapper,
+	wrapperDelay,
+}: ContactCardWithWrapperProps) => {
+	const content = (
 		<li className="rounded-xl" key={label}>
 			<a
+				aria-label={`Ikona ${socialName}`}
 				href={href}
 				target="_blank"
 				rel="noopener noreferrer"
@@ -24,4 +30,10 @@ export const ContactCard = ({
 			</a>
 		</li>
 	);
+
+	if (Wrapper) {
+		return <Wrapper delay={wrapperDelay}>{content}</Wrapper>;
+	}
+
+	return content;
 };

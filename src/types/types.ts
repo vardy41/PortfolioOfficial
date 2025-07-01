@@ -123,7 +123,7 @@ export type CardWrapperProps = {
 export type FadeInSectionProps = {
 	children: ReactNode;
 	className?: string;
-	delay: number;
+	delay?: number;
 };
 
 export type MenuProps = {
@@ -143,3 +143,7 @@ export type LazyWithPreload<T extends React.ComponentType<any>> =
 	React.LazyExoticComponent<T> & {
 		preload: () => Promise<{ default: T }>;
 	};
+export type ContactCardWithWrapperProps = ContactCardProps & {
+	Wrapper?: React.ComponentType<{ children: React.ReactNode; delay?: number }>;
+	wrapperDelay?: number;
+};
