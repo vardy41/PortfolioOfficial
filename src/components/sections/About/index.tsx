@@ -24,7 +24,7 @@ export const About = () => {
 						{aboutParagraphsContent.map((text, index) => (
 							<FadeInSection key={index} delay={150 + index * 100}>
 								<Paragraph
-									textColor="text-slate-400"
+									textColor="text-slate-300"
 									textSize="text-base"
 									content={text}
 								/>
