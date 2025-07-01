@@ -13,7 +13,12 @@ export const ContactCard = ({
 }: ContactCardWithWrapperProps) => {
 	const content = (
 		<li className="rounded-xl" key={label}>
-			<a href={href} target="_blank" rel="noreferrer" className="block">
+			<a
+				href={href}
+				target="_blank"
+				rel="noreferrer"
+				className="block"
+				aria-label={`Otwórz profil ${socialName} w nowej karcie`}>
 				<CardWrapper className="flex flex-col items-center mb-2">
 					<Icon className="text-5xl text-white mb-1" />
 					<h3 className="text-white text-2xl font-bold">{socialName}</h3>
