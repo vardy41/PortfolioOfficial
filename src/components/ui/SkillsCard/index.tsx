@@ -4,7 +4,7 @@ import type { SkillsCardProps } from "../../../types/types";
 export const SkillsCard = React.memo(
 	({ icon: Icon, title, tech, textColor, bgColor }: SkillsCardProps) => {
 		return (
-			<div className="card p-6 rounded-xl bg-slate-800 shadow-md md:h-[16rem]">
+			<div className="card p-6 rounded-xl bg-slate-800 shadow-md">
 				<div
 					className={`${bgColor} w-16 h-16 rounded-lg flex items-center justify-center mb-6`}>
 					<Icon className={`${textColor} text-3xl`} />

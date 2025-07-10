@@ -12,7 +12,7 @@ export const ProjectCard = ({
 	hrefDemo,
 }: ProjectCardProps) => {
 	return (
-		<div className="card rounded-xl overflow-hidden">
+		<div className="card rounded-xl overflow-hidden h-[28rem]">
 			<div className="project-image h-48 bg-slate-800">
 				<img
 					src={projectBackground}

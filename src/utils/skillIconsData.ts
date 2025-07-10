@@ -22,14 +22,13 @@ export const skillsIcons: skillIconsDataProps[] = [
 		icon: FaServer,
 		title: "Backend",
 		techStack: ["Node.js", "REST API"],
-
 		textColor: "text-purple-400",
 		bgColor: "bg-purple-900/30",
 	},
 	{
 		icon: FaTools,
 		title: "Narzędzia",
-		techStack: ["Git", "Webpack", "Vite", "Jest", "VS Code"],
+		techStack: ["Git", "Webpack", "Vite", "Jest", "VS Code,", "GIT"],
 		textColor: "text-indigo-400",
 		bgColor: "bg-indigo-900/30",
 	},
