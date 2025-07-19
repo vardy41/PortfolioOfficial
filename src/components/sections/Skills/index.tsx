@@ -1,3 +1,4 @@
+import { CardHeadingWrapper } from "../../ui/CardHeadingWrapper";
 import { skillsParagraphContent } from "../../../utils/paragraphsContent";
 import { SkillsCard } from "../../ui/SkillsCard";
 import { skillsIcons } from "../../../utils/skillIconsData";
@@ -51,21 +52,21 @@ export const Skills = () => {
 
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 				<FadeInSection delay={300}>
-					<div className="card p-6 rounded-xl">
+					<CardHeadingWrapper>
 						<CardHeading color="text-blue-500" marginBottom="mb-4">
 							Specjalizacje
 						</CardHeading>
 						<ul className="space-y-4">{specializationElements}</ul>
-					</div>
+					</CardHeadingWrapper>
 				</FadeInSection>
 
 				<FadeInSection delay={500}>
-					<div className="card p-6 rounded-xl">
+					<CardHeadingWrapper>
 						<CardHeading color="text-blue-500" marginBottom="mb-4">
 							Ciągły rozwój
 						</CardHeading>
 						{skillsParagraphElements}
-					</div>
+					</CardHeadingWrapper>
 				</FadeInSection>
 			</div>
 		</Section>

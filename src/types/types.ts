@@ -147,3 +147,7 @@ export type ContactCardWithWrapperProps = ContactCardProps & {
 	Wrapper?: React.ComponentType<{ children: React.ReactNode; delay?: number }>;
 	wrapperDelay?: number;
 };
+
+export type CardHeadingWrapperProps = {
+	children: ReactNode;
+};
