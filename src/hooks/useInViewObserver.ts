@@ -27,8 +27,7 @@ export function useInViewObserver<T extends HTMLElement = HTMLDivElement>(
 		return () => {
 			if (element) observer.unobserve(element);
 		};
-		// NIE podajemy `options` – zakładamy że są stałe
-	}, []);
+	});
 
 	return { ref, isVisible };
 }
