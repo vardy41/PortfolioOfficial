@@ -1,8 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
-interface UseInViewObserverOptions extends IntersectionObserverInit {
-	once?: boolean; // opcjonalnie: czy animacja tylko raz?
-}
+import type { UseInViewObserverOptions } from "../types/types";
 
 export function useInViewObserver<T extends HTMLElement = HTMLDivElement>(
 	options?: UseInViewObserverOptions

@@ -1,30 +1,66 @@
 import type { ReactNode } from "react";
 import type { IconType } from "react-icons/lib";
-export type GradientBlobProps = {
-	className: string;
-	color: string;
+
+// Typ bazowy dla kart z ikoną
+export type IconCardBase = {
+	icon: IconType;
+	title?: string;
+	text?: string;
+	color?: string;
+	bgColor?: string;
 };
 
+// Typ bazowy dla kart z technologiami
+export type TechCardBase = IconCardBase & {
+	tech?: string[];
+	techStack?: string[];
+	textColor?: string;
+};
+
+// Layout
 export type LayoutProps = {
 	children: ReactNode;
 };
 
-export type MyValuesCardProps = {
-	icon: IconType;
+// Karty wartości
+export type MyValuesCardProps = IconCardBase & {
 	title: string;
 	text: string;
 	textColor: string;
 	bgColor: string;
 };
 
-export type SkillsCardProps = {
-	icon: IconType;
+// Karty umiejętności
+export type SkillsCardProps = TechCardBase & {
 	title: string;
 	tech: string[];
 	textColor: string;
 	bgColor: string;
 };
 
+// Karta o mnie
+export type AboutIconsDataProps = IconCardBase & {
+	title: string;
+	text: string;
+	color: string;
+	bgColor: string;
+};
+
+// Karta technologii
+export type SkillIconsDataProps = TechCardBase & {
+	title: string;
+	techStack: string[];
+	textColor: string;
+	bgColor: string;
+};
+
+// Lista specjalizacji
+export type SpecializationListProps = {
+	icon: IconType;
+	text: string;
+};
+
+// Paragraf
 export type ParagraphProps = {
 	textColor: string;
 	margin?: string;
@@ -32,12 +68,14 @@ export type ParagraphProps = {
 	content: string;
 };
 
+// Karta doświadczenia/edukacji
 export type CardProps = {
 	title: string;
 	description: string;
 	company?: string;
 };
 
+// Karta projektu
 export type ProjectCardProps = {
 	projectBackground: string;
 	title: string;
@@ -49,6 +87,10 @@ export type ProjectCardProps = {
 	hrefDemo: string;
 };
 
+// Dane projektu (można użyć ProjectCardProps, jeśli identyczne)
+export type ProjectDataProps = ProjectCardProps;
+
+// Sekcja
 export type SectionProps = {
 	children: ReactNode;
 	className?: string;
@@ -56,50 +98,27 @@ export type SectionProps = {
 	id: string;
 };
 
+// Nagłówek sekcji
 export type SectionsHeaderProps = {
 	normalText: string;
 	blueText: string;
 };
 
-export type navAndSocialLinksProps = {
+// Link nawigacyjny lub social
+export type NavLinkProps = {
+	label: string;
+	href: string;
+};
+
+export type SocialLinkProps = {
 	icon: IconType;
 	label: string;
 	href: string;
 	social: string;
 	nickName: string;
 };
-export type aboutIconsDataProps = {
-	icon: IconType;
-	title: string;
-	text: string;
-	color: string;
-	bgColor: string;
-};
 
-export type projectDataProps = {
-	projectBackground: string;
-	title: string;
-	text: string;
-	tech: string[];
-	iconDemo: IconType;
-	iconGit: IconType;
-	hrefGit: string;
-	hrefDemo: string;
-};
-
-export type skillIconsDataProps = {
-	icon: IconType;
-	title: string;
-	techStack: string[];
-	textColor: string;
-	bgColor: string;
-};
-
-export type specializationListProps = {
-	icon: IconType;
-	text: string;
-};
-
+// Karta kontaktowa
 export type ContactCardProps = {
 	icon: IconType;
 	socialName: string;
@@ -108,10 +127,11 @@ export type ContactCardProps = {
 	label: string;
 };
 
+// Wrappery i headingi
 export type CardHeadingProps = {
 	children: ReactNode;
-	color?: string; // e.g. "text-white" or "text-blue-500"
-	marginBottom?: string; // e.g. "mb-4", "mb-6"
+	color?: string;
+	marginBottom?: string;
 	className?: string;
 };
 
@@ -120,12 +140,18 @@ export type CardWrapperProps = {
 	className?: string;
 };
 
+export type CardHeadingWrapperProps = {
+	children: ReactNode;
+};
+
+// Animacje i sekcje
 export type FadeInSectionProps = {
 	children: ReactNode;
 	className?: string;
 	delay?: number;
 };
 
+// Menu
 export type MenuProps = {
 	mobileMenuOpen: boolean;
 	onLinkClick: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void;
@@ -135,19 +161,17 @@ export type HamburgerButtonProps = {
 	onClick: () => void;
 };
 
-export type navLinksProps = {
-	label: string;
-	href: string;
-};
-export type LazyWithPreload<T extends React.ComponentType<any>> =
+// Lazy loading z preloadem
+export type LazyWithPreload<T extends React.ComponentType<unknown>> =
 	React.LazyExoticComponent<T> & {
 		preload: () => Promise<{ default: T }>;
 	};
+
+// Karta kontaktowa z wrapperem
 export type ContactCardWithWrapperProps = ContactCardProps & {
 	Wrapper?: React.ComponentType<{ children: React.ReactNode; delay?: number }>;
 	wrapperDelay?: number;
 };
-
-export type CardHeadingWrapperProps = {
-	children: ReactNode;
-};
+export interface UseInViewObserverOptions extends IntersectionObserverInit {
+	once?: boolean;
+}
