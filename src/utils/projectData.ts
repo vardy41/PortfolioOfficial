@@ -17,7 +17,7 @@ export const projectData: ProjectDataProps[] = [
 		projectBackground: moodBasedApp,
 		title: "MoodBasedApp",
 		text: "Aplikacja w której wybieramy playliste na podstawie naszego humoru, dostęp tylko do preview piosenek. Projekt służy pokazaniu umiejętności REST API.",
-		tech: ["React", "Typescript", "SCSS", "React Query", "Express"],
+		tech: ["React", "Typescript", "SCSS", "React Query", "Express", "REST API"],
 		iconDemo: FaExternalLinkAlt,
 		iconGit: FaGithub,
 		hrefGit: "https://github.com/vardy41/MoodBasedApp",
