@@ -1,8 +1,9 @@
 import portfolioImg from "../assets/svg/backgrounds/portfolioBackground.svg";
 import project1Bg from "../assets/svg/backgrounds/projectBg.svg";
-import type { projectDataProps } from "../types/types";
+import moodBasedApp from "../assets/svg/backgrounds/moodBasedApp.svg";
+import type { ProjectDataProps } from "../types/types";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-export const projectData: projectDataProps[] = [
+export const projectData: ProjectDataProps[] = [
 	{
 		projectBackground: portfolioImg,
 		title: "Portfolio",
@@ -14,13 +15,13 @@ export const projectData: projectDataProps[] = [
 		hrefDemo: "https://drdevportfolio.netlify.app/",
 	},
 	{
-		projectBackground: project1Bg,
-		title: "Coming soon...",
-		text: "Project in progress...",
-		tech: ["Tech", "Tech", "Tech", "Tech"],
+		projectBackground: moodBasedApp,
+		title: "MoodBasedApp",
+		text: "Aplikacja w której wybieramy playliste na podstawie naszego humoru, dostęp tylko do preview piosenek. Projekt służy pokazaniu umiejętności REST API.",
+		tech: ["React", "Typescript", "SCSS", "React Query", "Express"],
 		iconDemo: FaExternalLinkAlt,
 		iconGit: FaGithub,
-		hrefGit: "#",
-		hrefDemo: "#",
+		hrefGit: "https://github.com/vardy41/MoodBasedApp",
+		hrefDemo: "https://moodbasedapp.netlify.app/",
 	},
 ];
