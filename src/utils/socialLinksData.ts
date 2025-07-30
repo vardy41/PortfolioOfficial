@@ -1,7 +1,7 @@
-import type { navAndSocialLinksProps } from "../types/types";
+import type { SocialLinkProps } from "../types/types";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-export const socialLinks: navAndSocialLinksProps[] = [
+export const socialLinks: SocialLinkProps[] = [
 	{
 		icon: FaGithub,
 		href: "https://github.com/vardy41",

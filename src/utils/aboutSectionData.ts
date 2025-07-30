@@ -1,6 +1,6 @@
-import type { aboutIconsDataProps } from "../types/types";
+import type { AboutIconsDataProps } from "../types/types";
 import { FaCode, FaMobileAlt, FaTachometerAlt, FaUsers } from "react-icons/fa";
-export const aboutIcons: aboutIconsDataProps[] = [
+export const aboutIcons: AboutIconsDataProps[] = [
 	{
 		icon: FaCode,
 		title: "Czysty kod",

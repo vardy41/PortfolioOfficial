@@ -1,5 +1,4 @@
 import portfolioImg from "../assets/svg/backgrounds/portfolioBackground.svg";
-import project1Bg from "../assets/svg/backgrounds/projectBg.svg";
 import moodBasedApp from "../assets/svg/backgrounds/moodBasedApp.svg";
 import type { ProjectDataProps } from "../types/types";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";

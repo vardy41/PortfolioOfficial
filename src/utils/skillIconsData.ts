@@ -1,6 +1,6 @@
-import type { skillIconsDataProps } from "../types/types";
+import type { SkillIconsDataProps } from "../types/types";
 import { FaCode, FaServer, FaTools } from "react-icons/fa";
-export const skillsIcons: skillIconsDataProps[] = [
+export const skillsIcons: SkillIconsDataProps[] = [
 	{
 		icon: FaCode,
 		title: "Frontend",

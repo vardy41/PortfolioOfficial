@@ -1,6 +1,6 @@
-import type { specializationListProps } from "../types/types";
+import type { SpecializationListProps } from "../types/types";
 import { FaCheckCircle } from "react-icons/fa";
-export const specializationList: specializationListProps[] = [
+export const specializationList: SpecializationListProps[] = [
 	{
 		icon: FaCheckCircle,
 		text: "Tworzenie responsywnych interfejsów użytkownika",
