@@ -1,3 +1,4 @@
+import comingSoonbg from "../assets/svg/backgrounds/projectBg.svg";
 import portfolioImg from "../assets/svg/backgrounds/portfolioBackground.svg";
 import moodBasedApp from "../assets/svg/backgrounds/moodBasedApp.svg";
 import type { ProjectDataProps } from "../types/types";
@@ -22,5 +23,15 @@ export const projectData: ProjectDataProps[] = [
 		iconGit: FaGithub,
 		hrefGit: "https://github.com/vardy41/MoodBasedApp",
 		hrefDemo: "https://moodbasedapp.netlify.app/",
+	},
+	{
+		projectBackground: comingSoonbg,
+		title: "Coming soon...",
+		text: "Coming soon...",
+		tech: ["Tech", "Tech", "Tech", "Tech"],
+		iconDemo: FaExternalLinkAlt,
+		iconGit: FaGithub,
+		hrefGit: "#",
+		hrefDemo: "#",
 	},
 ];
