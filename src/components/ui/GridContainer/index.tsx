@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
 
-interface GridContainerProps {
+type GridContainerProps = {
 	children: ReactNode;
 	className?: string;
-}
+};
 
 export const GridContainer = ({
 	children,

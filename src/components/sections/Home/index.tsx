@@ -4,6 +4,7 @@ import { Section } from "../../ui/Section";
 import { Button } from "../../ui/Button";
 import { FadeInSection } from "../../ui/FadeInSection";
 import avatar from "../../../assets/svg/avatar/avatar.webp";
+
 const socialLinksElements = socialLinks.map(({ icon: Icon, href, label }) => (
 	<a
 		key={label}

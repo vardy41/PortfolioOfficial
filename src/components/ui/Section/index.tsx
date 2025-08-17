@@ -1,4 +1,11 @@
-import type { SectionProps } from "../../../types/types";
+import type { ReactNode } from "react";
+
+export type SectionProps = {
+	children: ReactNode;
+	className?: string;
+	containerClass?: string;
+	id: string;
+};
 
 export const Section = ({
 	children,

@@ -1,5 +1,12 @@
-import type { MyValuesCardProps } from "../../../types/types";
+import type { IconCardBase } from "../../../types/types";
 import React from "react";
+
+export type MyValuesCardProps = IconCardBase & {
+	title: string;
+	text: string;
+	textColor: string;
+	bgColor: string;
+};
 
 export const MyValuesCard = React.memo(
 	({ icon: Icon, title, text, textColor, bgColor }: MyValuesCardProps) => {

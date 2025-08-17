@@ -23,12 +23,6 @@ export type LayoutProps = {
 };
 
 // Karty wartości
-export type MyValuesCardProps = IconCardBase & {
-	title: string;
-	text: string;
-	textColor: string;
-	bgColor: string;
-};
 
 // Karty umiejętności
 export type SkillsCardProps = TechCardBase & {
@@ -61,19 +55,8 @@ export type SpecializationListProps = {
 };
 
 // Paragraf
-export type ParagraphProps = {
-	textColor: string;
-	margin?: string;
-	textSize?: string;
-	content: string;
-};
 
 // Karta doświadczenia/edukacji
-export type CardProps = {
-	title: string;
-	description: string;
-	company?: string;
-};
 
 // Karta projektu
 export type ProjectCardProps = {
@@ -91,18 +74,8 @@ export type ProjectCardProps = {
 export type ProjectDataProps = ProjectCardProps;
 
 // Sekcja
-export type SectionProps = {
-	children: ReactNode;
-	className?: string;
-	containerClass?: string;
-	id: string;
-};
 
 // Nagłówek sekcji
-export type SectionsHeaderProps = {
-	normalText: string;
-	blueText: string;
-};
 
 // Link nawigacyjny lub social
 export type NavLinkProps = {
@@ -135,30 +108,8 @@ export type CardHeadingProps = {
 	className?: string;
 };
 
-export type CardWrapperProps = {
-	children: ReactNode;
-	className?: string;
-};
-
 export type CardHeadingWrapperProps = {
 	children: ReactNode;
-};
-
-// Animacje i sekcje
-export type FadeInSectionProps = {
-	children: ReactNode;
-	className?: string;
-	delay?: number;
-};
-
-// Menu
-export type MenuProps = {
-	mobileMenuOpen: boolean;
-	onLinkClick: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void;
-};
-
-export type HamburgerButtonProps = {
-	onClick: () => void;
 };
 
 // Lazy loading z preloadem
@@ -168,10 +119,7 @@ export type LazyWithPreload<T extends React.ComponentType<unknown>> =
 	};
 
 // Karta kontaktowa z wrapperem
-export type ContactCardWithWrapperProps = ContactCardProps & {
-	Wrapper?: React.ComponentType<{ children: React.ReactNode; delay?: number }>;
-	wrapperDelay?: number;
-};
+
 export interface UseInViewObserverOptions extends IntersectionObserverInit {
 	once?: boolean;
 }

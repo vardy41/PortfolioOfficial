@@ -1,12 +1,11 @@
 import type { ReactNode } from "react";
 
-interface ButtonProps
-	extends React.ButtonHTMLAttributes<HTMLAnchorElement | HTMLButtonElement> {
+type ButtonProps = {
 	children: ReactNode;
 	variant?: "primary" | "secondary";
 	href?: string;
 	className?: string;
-}
+} & React.ButtonHTMLAttributes<HTMLAnchorElement | HTMLButtonElement>;
 
 export const Button = ({
 	children,

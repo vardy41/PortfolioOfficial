@@ -1,6 +1,11 @@
 import { CardWrapper } from "../CardWrapper";
 import { Paragraph } from "../Paragraph";
-import type { ContactCardWithWrapperProps } from "../../../types/types";
+import type { ContactCardProps } from "../../../types/types";
+
+type ContactCardWithWrapperProps = ContactCardProps & {
+	Wrapper?: React.ComponentType<{ children: React.ReactNode; delay?: number }>;
+	wrapperDelay?: number;
+};
 
 export const ContactCard = ({
 	icon: Icon,

@@ -1,6 +1,12 @@
 import { useInViewObserver } from "../../../hooks/useInViewObserver";
 import { useState, useEffect } from "react";
-import type { FadeInSectionProps } from "../../../types/types";
+import type { ReactNode } from "react";
+
+export type FadeInSectionProps = {
+	children: ReactNode;
+	className?: string;
+	delay?: number;
+};
 
 export function FadeInSection({
 	children,

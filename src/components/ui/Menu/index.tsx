@@ -1,6 +1,10 @@
-import type { MenuProps } from "../../../types/types";
 import React from "react";
 import { navLinks } from "../../../utils/navLinks";
+
+export type MenuProps = {
+	mobileMenuOpen: boolean;
+	onLinkClick: (e: React.MouseEvent<HTMLAnchorElement>, href: string) => void;
+};
 
 export const Menu = React.memo(({ mobileMenuOpen, onLinkClick }: MenuProps) => {
 	return (

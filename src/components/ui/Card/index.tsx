@@ -1,5 +1,10 @@
 import React from "react";
-import type { CardProps } from "../../../types/types";
+
+type CardProps = {
+	title: string;
+	description: string;
+	company?: string;
+};
 export const Card = React.memo(({ title, description, company }: CardProps) => (
 	<div className="card p-4 rounded-xl bg-slate-800 shadow-md h-[8rem]">
 		<h3 className="text-xl font-semibold mb-2 text-blue-500">{title}</h3>

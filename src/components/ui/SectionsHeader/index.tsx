@@ -1,5 +1,10 @@
 import { HeaderLine } from "../HeaderLine";
-import type { SectionsHeaderProps } from "../../../types/types";
+
+export type SectionsHeaderProps = {
+	normalText: string;
+	blueText: string;
+};
+
 export const SectionsHeader = ({
 	normalText,
 	blueText,
