@@ -1,7 +1,6 @@
 import React from "react";
 import type { SkillsCardProps } from "../../../types/types";
 
-
 export const SkillsCard = React.memo(
 	({ icon: Icon, title, tech, textColor, bgColor }: SkillsCardProps) => {
 		return (
